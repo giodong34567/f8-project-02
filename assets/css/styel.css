@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #ffb900;
+}
+
+/* =========== COMMON ===============*/
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0px auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #171100;
+    color: #fff;
+    padding: 17px 16px;
+    min-width: 118px;
+    border-radius: 24.5px;
+    color: #fff;
+    text-align: center;
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+
+/* ============= HEADER ==================*/
+
+.header {
+    background-color: #fffcf4;
+}
+
+header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.header .body {
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 8px 21px;
+    /* 175% */
+}
+
+.nav li:hover a,
+.nav li.active a {
+    color: #171100;
+    font-size: 1.6rem;
+    text-shadow: 1px 0 0 currentColor;
+    /* 175% */
+}
+
+.nav a {
+    position: relative;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: #171100;
+    display: block;
+    left: 21px;
+    bottom: 6px;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
+    margin-left: 49px;
+    font-weight: 600;
+    margin-top: 8px;
+    /* Khoang cach giua btn va cac li la 70, do padding 21 roi nen margin-left them 49px nua */
+}
+
+/* ================= HERO ================== */
+
+.hero {
+    background-color: #fffcf4;
+    padding-top: 57px;
+}
+
+.hero .body {
+    display: flex;
+    align-items: center;
+}
+
+.hero .media-block {
+    position: relative;
+    min-width: 48%;
+    margin-right: 130px;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero .hero-summary {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    background-color: #fff;
+    padding: 24px 58px 24px 24px;
+    border-radius: 12px;
+}
+
+.hero-summary .icon {
+    height: 48px;
+    width: 48px;
+    background-color: #FFF9E8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-summary .item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.hero-summary .item {
+    display: flex;
+}
+
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero-summary .label {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    /* 185.714% */
+}
+
+.hero-summary .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    /* 166.667% */
+}
+
+.hero .content-block {
+    width: 470px;
+    height: 558px;
+}
+
+.content-block .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 6.8rem;
+    /* 117.241% */
+    letter-spacing: -0.116rem;
+    margin-bottom: 22px;
+}
+
+.content-block .desc {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 38px;
+    /* 166.667% */
+}
+
+.hero .cta-group {
+    display: flex;
+    height: 64px;
+    align-items: center;
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    margin-left: 28px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* .content-block .cta- */
+
+.hero-cta {
+    background-color: var(--primary-color);
+    min-width: 180px;
+    line-height: 30px;
+    border-radius: 32px;
+    font-weight: 600;
+}
+
+.hero-cta:hover {
+    color: #5F5B53;
+}
+
+.hero .watch-video .icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    position: relative;
+}
+
+.hero .watch-video span {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.hero .watch-video .icon img {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    width: 12px;
+    height: 12px;
+}
