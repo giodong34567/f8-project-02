@@ -38,7 +38,7 @@ a {
 }
 
 .btn:hover {
-    color: aqua;
+    opacity: 0.9;
 }
 
 
@@ -508,4 +508,70 @@ header.fixed {
 
 .feedback .above {
     display: block;
+}
+
+/*====== FEATURED ==========*/
+
+.featured {
+    margin-top: 200px;
+}
+
+.featured .body {
+    display: flex;
+}
+
+.featured .featured-left {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+}
+
+.featured .img {
+    width: 270px;
+    border-radius: 16px;
+}
+
+.featured .img:first-child {
+    position: relative;
+    top: 34px;
+}
+
+.featured .featured-right {
+    width: 470px;
+    margin-left: auto;
+    margin-top: 58px;
+}
+
+.featured .lv2 {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    /* 126.316% */
+    letter-spacing: -0.076rem;
+}
+
+.featured .desc {
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    /* 175% */
+}
+
+.featured .acr {
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    /* 175% */
+}
+
+.featured .btn {
+    margin-top: 43px;
+    background-color: #FFB900;
+    min-width: 137px;
 }
