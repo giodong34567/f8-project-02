@@ -298,9 +298,13 @@ header.fixed {
     margin-left: 28px;
 }
 
+/* ============= COURSES ===================*/
+
+
 .courses .main-content {
     background-color: #fff;
     padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .courses .header {
@@ -402,4 +406,105 @@ header.fixed {
     font-weight: 600;
     line-height: 3rem;
     /* 166.667% */
+}
+
+/* =========== FEED BACK =====================*/
+
+.feedback {
+    background-color: #2e2100;
+}
+
+.feedback .main-content {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-avatar {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.feedback-left {
+    margin-left: 0px;
+}
+
+.feedback .student {
+    margin-bottom: 28px;
+}
+
+.feedback .feedback-left .name {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+    /* 141.667% */
+}
+
+.feedback .feedback-left .pos {
+    margin-top: 6px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-wrap: nowrap;
+    /* 185.714% */
+}
+
+.feedback .feedback-left .dots {
+    display: flex;
+    justify-content: start;
+}
+
+.feedback .dot {
+    background-color: #634700;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.feedback .dots .active {
+    background-color: #FFB900;
+}
+
+.feedback .dot:not(:last-child) {
+    margin-right: 6px;
+}
+
+.feedback .dot {
+    cursor: pointer;
+}
+
+.feedback .feedback-right {
+    max-width: 780px;
+    position: relative;
+    margin-left: 240px;
+}
+
+.feedback .feedback-right .quote {
+    display: block;
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 4rem;
+    /* 153.846% */
+}
+
+.feedback .above {
+    display: block;
 }
