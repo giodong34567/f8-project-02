@@ -425,6 +425,7 @@ header.fixed {
 }
 
 .feedback-avatar {
+    object-fit: cover;
     height: 72px;
     width: 72px;
     border-radius: 50%;
