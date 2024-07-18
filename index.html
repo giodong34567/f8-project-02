@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <title>F8-Project-02</title>
 </head>
@@ -47,7 +48,7 @@
                     </nav>
 
                     <div class="action">
-                        <a href="#!" class="btn sign-up-btn">Sign Up</a>
+                        <a href="#!" class="btn sign-up-btn" id="sign-up-btn">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -276,6 +277,23 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- LOGIN -->
+        <div class="form" id="form">
+            <button class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <form action="">
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Email address or phone number">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <input type="submit" name="submit" id="submit" value="Login">
+                <a class="forgot" href="#!">Forgotten password?</a>
+                <a class="create" href="#!">Create new account</a>
+            </form>
         </div>
     </main>
     <script src="main.js">

@@ -81,3 +81,14 @@ dots[7].onclick = function () {
         }
     }
 }
+/* Mở form và tắt form khi đăng kí*/
+var displayForm = document.getElementById("form")
+const btnSignUp = document.getElementById("sign-up-btn");
+
+btnSignUp.onclick = function () {
+    displayForm.className = "form form-display";
+}
+btnCloseSignUp = document.getElementsByClassName("close");
+btnCloseSignUp[0].onclick = function () {
+    displayForm.className = "form";
+}
